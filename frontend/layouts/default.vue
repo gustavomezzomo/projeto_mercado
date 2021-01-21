@@ -34,7 +34,12 @@ export default {
   }),
   computed: {
     snack () {
-      return this.$store.getters.snack
+      return JSON.parse(JSON.stringify(this.$store.state.snack.snack))
+    }
+  },
+  methods: {
+    closeSnack () {
+      this.$store.commit('snack/hide')
     }
   }
 }
