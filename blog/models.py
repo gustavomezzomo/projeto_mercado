@@ -10,8 +10,8 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    image = models.ImageField(upload_to='images/')
-    checkin = models.ImageField(default=False)
+    image = models.ImageField(
+        upload_to='images/', default='/media/images/teste.jpeg')
 
     def publish(self):
         self.published_date = timezone.now()
