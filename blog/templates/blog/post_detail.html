@@ -12,6 +12,8 @@
             class="glyphicon glyphicon-pencil"></span></a>
     {% endif %}
     <h2>{{ post.title }}</h2>
-    <p>{{ post.text|linebreaksbr }}</p>
+    {% if post.image %}
+    <img src="{{ post.image.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+    {% endif %}
 </div>
 {% endblock %}

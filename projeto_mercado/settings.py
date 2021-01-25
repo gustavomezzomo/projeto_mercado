@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    'posts',
+    'blog',
 ]
 
 SENTRY_DSN = os.getenv('SENTRY_DSN', '')
@@ -187,3 +187,8 @@ if DEBUG:
     for logger in LOGGING['loggers']:
         LOGGING['loggers'][logger]['handlers'] = ['console']
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.getenv('DJANGO_MEDIA_ROOT', os.path.join(BASE_DIR, 'media'))
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.getenv('DJANGO_STATIC_ROOT', os.path.join(BASE_DIR, 'static'))
