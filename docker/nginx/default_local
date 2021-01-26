@@ -11,6 +11,9 @@ server {
     location /static {
         proxy_pass http://localhost:8000/static;
     }
+    location /media {
+        proxy_pass http://localhost:8000/media;
+    }
     location / {
         proxy_pass http://localhost:3000/;
     }
