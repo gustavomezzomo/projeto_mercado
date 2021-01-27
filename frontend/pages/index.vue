@@ -18,18 +18,21 @@
 
 import AppApi from '~apijs'
 
-asyncData(); {
-  return AppApi.image().then(result => {
-    element.image = 'media/'
-  })
-  return {
-    items: result.data.data
-  }
-}
-
 export default {
   data () {
-    return {}
+    return {
+
+    }
+  },
+  asyncData () {
+    let retorno = {}
+    AppApi.image().then(result => {
+      // result.image = 'media/'
+      retorno = result
+    })
+    return {
+      items: retorno.data.data
+    }
   }
 }
 </script>
