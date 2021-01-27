@@ -18,10 +18,11 @@ const api = {
   },
   list_todos() {
     return get('/api/list_todos')
-  }
+  },
   image() {
     return get('/api/image');
 }
+
 export default api
 
 function get(url, params) {

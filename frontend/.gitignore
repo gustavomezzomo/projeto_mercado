@@ -91,4 +91,4 @@ sw.*
 *.swp
 
 # -38.pyc files
-*-38.pyc
+*.pyc
