@@ -16,7 +16,7 @@
 
 <script>
 
-import AppApi from '~apijs'
+import api from '~api'
 
 export default {
   data () {
@@ -24,9 +24,11 @@ export default {
 
     }
   },
-  asyncData () {
+  mounted () {
     let retorno = {}
-    AppApi.image().then(result => {
+    // eslint-disable-next-line no-debugger
+    debugger
+    api.image().then(result => {
       // result.image = 'media/'
       retorno = result
     })
