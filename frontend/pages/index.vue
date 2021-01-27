@@ -16,7 +16,7 @@
 
 <script>
 
-import api from '~api'
+import api from '~/components/api/api.js'
 
 export default {
   data () {

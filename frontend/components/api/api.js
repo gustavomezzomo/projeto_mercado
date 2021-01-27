@@ -1,3 +1,4 @@
+import { get, post } from '~/helpers/api/ajaxutils'
 import axios from '~/helpers/axios'
 axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 axios.defaults.xsrfCookieName = 'csrftoken'
@@ -24,16 +25,3 @@ const api = {
 }
 
 export default api
-
-export function get (url, params) {
-  return axios.get(url, { params })
-}
-
-export function post (url, params) {
-  const fd = new FormData()
-  params = params || {}
-  Object.keys(params).map((k) => {
-    fd.append(k, params[k])
-  })
-  return axios.post(url, fd)
-}
