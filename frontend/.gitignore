@@ -89,3 +89,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# -38.pyc files
+*-38.pyc
