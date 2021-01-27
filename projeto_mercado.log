@@ -238,3 +238,33 @@ WARNING "GET /static/admin/js/nav_sidebar.js HTTP/1.0" 404 179
 WARNING "GET /static/admin/css/dashboard.css HTTP/1.0" 404 179
 INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
 INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /api/image
+WARNING Not Found: /api/image
+WARNING "GET /api/image HTTP/1.0" 404 179
+WARNING "GET /api/image HTTP/1.0" 404 179
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /api/image
+WARNING Not Found: /api/image
+WARNING "GET /api/image HTTP/1.0" 404 179
+WARNING "GET /api/image HTTP/1.0" 404 179
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /api/image
+WARNING Not Found: /api/image
+WARNING "GET /api/image HTTP/1.0" 404 179
+WARNING "GET /api/image HTTP/1.0" 404 179
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /api/image
+WARNING Not Found: /api/image
+WARNING "GET /api/image HTTP/1.0" 404 179
+WARNING "GET /api/image HTTP/1.0" 404 179

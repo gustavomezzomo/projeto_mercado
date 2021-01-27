@@ -16,7 +16,7 @@
 
 <script>
 
-import api from '~api'
+import api from '~/components/api/api.js'
 
 export default {
   data () {
@@ -30,10 +30,11 @@ export default {
     debugger
     api.image().then(result => {
       // result.image = 'media/'
+      console.log('XD', result)
       retorno = result
     })
     return {
-      items: retorno.data.data
+      items: retorno
     }
   }
 }

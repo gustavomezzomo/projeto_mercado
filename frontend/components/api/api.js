@@ -1,8 +1,9 @@
+import { get, post } from '~/helpers/api/ajaxutils'
 import axios from '~/helpers/axios'
 axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 axios.defaults.xsrfCookieName = 'csrftoken'
 
-const api = {
+export default {
   login (username, password) {
     return post('/api/login', { username, password })
   },
@@ -21,19 +22,4 @@ const api = {
   image () {
     return get('/api/image')
   }
-}
-
-export default api
-
-export function get (url, params) {
-  return axios.get(url, { params })
-}
-
-export function post (url, params) {
-  const fd = new FormData()
-  params = params || {}
-  Object.keys(params).map((k) => {
-    fd.append(k, params[k])
-  })
-  return axios.post(url, fd)
 }
