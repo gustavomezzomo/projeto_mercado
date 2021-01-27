@@ -96,7 +96,7 @@ DATABASES = {
         'USER': os.getenv('DJANGO_DB_USER', 'app'),
         'PASSWORD': os.getenv('DJANGO_DB_PASSWORD', 'app'),
         'HOST': os.getenv('DJANGO_DB_HOST', 'localhost'),
-        'PORT': os.getenv('DJANGO_DB_PORT', '5434'),
+        'PORT': os.getenv('DJANGO_DB_PORT', '5432'),
     }
 }
 
