@@ -16,20 +16,25 @@
 
 <script>
 
-import AppApi from '~apijs'
-
-asyncData(); {
-  return AppApi.image().then(result => {
-    element.image = 'media/'
-  })
-  return {
-    items: result.data.data
-  }
-}
+import api from '~api'
 
 export default {
   data () {
-    return {}
+    return {
+
+    }
+  },
+  mounted () {
+    let retorno = {}
+    // eslint-disable-next-line no-debugger
+    debugger
+    api.image().then(result => {
+      // result.image = 'media/'
+      retorno = result
+    })
+    return {
+      items: retorno.data.data
+    }
   }
 }
 </script>
