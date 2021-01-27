@@ -4,6 +4,7 @@ from .models import Post
 from .forms import PostForm
 from django.shortcuts import redirect
 import logging
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -53,3 +54,8 @@ def post_delete(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
     return redirect('post_list')
+
+
+def image():
+    image = list(image)
+    return image

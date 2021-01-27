@@ -188,3 +188,53 @@ WARNING "GET /static/admin/css/nav_sidebar.css HTTP/1.0" 404 179
 WARNING "GET /static/admin/js/nav_sidebar.js HTTP/1.0" 404 179
 WARNING "GET /static/admin/css/responsive.css HTTP/1.0" 404 179
 WARNING "GET /static/admin/css/responsive.css HTTP/1.0" 404 179
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.0" 200 6593
+INFO "GET /admin/ HTTP/1.0" 200 6593
+WARNING Not Found: /static/admin/css/base.css
+WARNING Not Found: /static/admin/css/base.css
+WARNING "GET /static/admin/css/base.css HTTP/1.0" 404 179
+WARNING "GET /static/admin/css/base.css HTTP/1.0" 404 179
+WARNING Not Found: /static/admin/css/nav_sidebar.css
+WARNING Not Found: /static/admin/css/nav_sidebar.css
+WARNING Not Found: /static/admin/css/responsive.css
+WARNING Not Found: /static/admin/css/responsive.css
+WARNING Not Found: /static/admin/js/nav_sidebar.js
+WARNING Not Found: /static/admin/css/dashboard.css
+WARNING "GET /static/admin/css/nav_sidebar.css HTTP/1.0" 404 179
+WARNING "GET /static/admin/css/nav_sidebar.css HTTP/1.0" 404 179
+WARNING Not Found: /static/admin/js/nav_sidebar.js
+WARNING "GET /static/admin/css/responsive.css HTTP/1.0" 404 179
+WARNING Not Found: /static/admin/css/dashboard.css
+WARNING "GET /static/admin/css/responsive.css HTTP/1.0" 404 179
+WARNING "GET /static/admin/js/nav_sidebar.js HTTP/1.0" 404 179
+WARNING "GET /static/admin/css/dashboard.css HTTP/1.0" 404 179
+WARNING "GET /static/admin/js/nav_sidebar.js HTTP/1.0" 404 179
+WARNING "GET /static/admin/css/dashboard.css HTTP/1.0" 404 179
+INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
