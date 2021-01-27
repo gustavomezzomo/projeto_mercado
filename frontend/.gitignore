@@ -90,5 +90,6 @@ sw.*
 # Vim swap files
 *.swp
 
-# -38.pyc files
+# Cached files
 *.pyc
+__pycache__/
