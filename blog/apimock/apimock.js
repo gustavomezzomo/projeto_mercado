@@ -47,13 +47,7 @@ const apimock = {
     },
     image() {
         console.log('vai')
-        return mockasync({
-            items: [
-                {
-                    scr='/media/images/teste.jpeg'
-                },
-            ],
-        });
+        return mockasync({ "image": "/media/images/download_kXD99YS.jpeg" });
     }
 };
 

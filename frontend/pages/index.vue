@@ -8,7 +8,7 @@
       <v-img
         max-height="100%"
         max-width="500"
-        src="element.image"
+        :src="postAtual.image"
       />
     </v-layout>
   </div>
@@ -20,22 +20,16 @@ import api from '~/components/api/api.js'
 
 export default {
   data () {
-    return {
+    return {postAtual: {
+
+    }
 
     }
   },
   mounted () {
-    let retorno = {}
-    // eslint-disable-next-line no-debugger
-    debugger
     api.image().then(result => {
-      // result.image = 'media/'
-      console.log('XD', result)
-      retorno = result
+      this.postAtual = result
     })
-    return {
-      items: retorno
-    }
   }
 }
 </script>
