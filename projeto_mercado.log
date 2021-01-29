@@ -238,3 +238,125 @@ WARNING "GET /static/admin/js/nav_sidebar.js HTTP/1.0" 404 179
 WARNING "GET /static/admin/css/dashboard.css HTTP/1.0" 404 179
 INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
 INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /api/image
+WARNING Not Found: /api/image
+WARNING "GET /api/image HTTP/1.0" 404 179
+WARNING "GET /api/image HTTP/1.0" 404 179
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /api/image
+WARNING Not Found: /api/image
+WARNING "GET /api/image HTTP/1.0" 404 179
+WARNING "GET /api/image HTTP/1.0" 404 179
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /api/image
+WARNING Not Found: /api/image
+WARNING "GET /api/image HTTP/1.0" 404 179
+WARNING "GET /api/image HTTP/1.0" 404 179
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /api/image
+WARNING Not Found: /api/image
+WARNING "GET /api/image HTTP/1.0" 404 179
+WARNING "GET /api/image HTTP/1.0" 404 179
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/urls.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/urls.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/urls.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /api/image
+Traceback (most recent call last):
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gustavomezzomo/projeto_mercado/blog/views.py", line 62, in image
+    return JsonResponse(post.to_json_dict())
+  File "/home/gustavomezzomo/projeto_mercado/blog/models.py", line 18, in to_json_dict
+    'image': self.image.image
+AttributeError: 'ImageFieldFile' object has no attribute 'image'
+ERROR Internal Server Error: /api/image
+Traceback (most recent call last):
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gustavomezzomo/projeto_mercado/blog/views.py", line 62, in image
+    return JsonResponse(post.to_json_dict())
+  File "/home/gustavomezzomo/projeto_mercado/blog/models.py", line 18, in to_json_dict
+    'image': self.image.image
+AttributeError: 'ImageFieldFile' object has no attribute 'image'
+ERROR "GET /api/image HTTP/1.0" 500 145
+ERROR "GET /api/image HTTP/1.0" 500 145
+ERROR Internal Server Error: /api/image
+Traceback (most recent call last):
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gustavomezzomo/projeto_mercado/blog/views.py", line 62, in image
+    return JsonResponse(post.to_json_dict())
+  File "/home/gustavomezzomo/projeto_mercado/blog/models.py", line 18, in to_json_dict
+    'image': self.image.image
+AttributeError: 'ImageFieldFile' object has no attribute 'image'
+ERROR Internal Server Error: /api/image
+Traceback (most recent call last):
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gustavomezzomo/projeto_mercado/blog/views.py", line 62, in image
+    return JsonResponse(post.to_json_dict())
+  File "/home/gustavomezzomo/projeto_mercado/blog/models.py", line 18, in to_json_dict
+    'image': self.image.image
+AttributeError: 'ImageFieldFile' object has no attribute 'image'
+ERROR "GET /api/image HTTP/1.0" 500 145
+ERROR "GET /api/image HTTP/1.0" 500 145
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /api/image
+Traceback (most recent call last):
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gustavomezzomo/projeto_mercado/blog/views.py", line 62, in image
+    return JsonResponse(post.to_json_dict())
+  File "/home/gustavomezzomo/projeto_mercado/blog/models.py", line 18, in to_json_dict
+    'image': self.image.image
+AttributeError: 'ImageFieldFile' object has no attribute 'image'
+ERROR Internal Server Error: /api/image
+Traceback (most recent call last):
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/gustavomezzomo/.virtualenvs/git/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gustavomezzomo/projeto_mercado/blog/views.py", line 62, in image
+    return JsonResponse(post.to_json_dict())
+  File "/home/gustavomezzomo/projeto_mercado/blog/models.py", line 18, in to_json_dict
+    'image': self.image.image
+AttributeError: 'ImageFieldFile' object has no attribute 'image'
+ERROR "GET /api/image HTTP/1.0" 500 145
+ERROR "GET /api/image HTTP/1.0" 500 145
+INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.

@@ -3,7 +3,7 @@ import axios from '~/helpers/axios'
 axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 axios.defaults.xsrfCookieName = 'csrftoken'
 
-const api = {
+export default {
   login (username, password) {
     return post('/api/login', { username, password })
   },
@@ -23,5 +23,3 @@ const api = {
     return get('/api/image')
   }
 }
-
-export default api

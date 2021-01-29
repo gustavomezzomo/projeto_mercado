@@ -7,7 +7,7 @@ function mockasync(data) {
         setTimeout(() => resolve({ data: data }), 600)
     })
 }
-const api = {
+const apimock = {
     login(username, password) {
         if (password) {
             logged_user = {
@@ -46,13 +46,8 @@ const api = {
         });
     },
     image() {
-        return mockasync({
-            items: [
-                {
-                    scr='/media/images/teste.jpeg'
-                },
-            ],
-        });
+        console.log('vai')
+        return mockasync({ "image": "/media/images/download_kXD99YS.jpeg" });
     }
 };
 

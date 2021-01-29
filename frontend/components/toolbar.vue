@@ -2,6 +2,9 @@
   <v-app-bar color="red" class="yellow--text" dark fixed app clipped-right>
     <v-layout justify-center align-center>
       <v-toolbar-title>Mercado Santa Inês</v-toolbar-title>
+      <v-btn icon color="blue" href="https://www.facebook.com/Mercado-Santa-Ines-109802760942900" target="_blank">
+        <v-icon>mdi-facebook</v-icon>
+      </v-btn>
     </v-layout>
   </v-app-bar>
 </template>
