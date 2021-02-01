@@ -1,11 +1,12 @@
 <template>
-  <v-app-bar color="red" class="yellow--text" dark fixed app clipped-right>
+  <v-app-bar color="rgb(255,0,0)" class="yellow--text" dark fixed app clipped-right>
+    <v-app-bar-nav-icon @click.stop="state.drawer = !state.drawer" />
     <v-layout justify-center align-center>
-      <v-btn icon color="green" href="https://web.whatsapp.com/send?phone=551299702-9059" target="_blank">
+      <v-btn icon color="light-green" href="https://web.whatsapp.com/send?phone=551299702-9059" target="_blank">
         <v-icon>mdi-whatsapp</v-icon>
       </v-btn>
       <v-toolbar-title>Mercado Santa Inês</v-toolbar-title>
-      <v-btn icon color="blue" href="https://www.facebook.com/Mercado-Santa-Ines-109802760942900" target="_blank">
+      <v-btn icon color="light-blue" href="https://www.facebook.com/Mercado-Santa-Ines-109802760942900" target="_blank">
         <v-icon>mdi-facebook</v-icon>
       </v-btn>
     </v-layout>

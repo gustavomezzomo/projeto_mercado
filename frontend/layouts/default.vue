@@ -1,6 +1,7 @@
 <template>
   <v-app id="inspire" class="site_root">
     <toolbar :state="layout" />
+    <sidenav-left :state="layout" />
     <v-content>
       <v-container fluid>
         <nuxt />
@@ -21,10 +22,12 @@
 
 <script>
 import toolbar from '~/components/toolbar.vue'
+import sidenavLeft from '~/components/sidenav-left.vue'
 import footer from '~/components/footer.vue'
 export default {
   components: {
     toolbar,
+    sidenavLeft,
     leFooter: footer
   },
   data: () => ({
@@ -47,6 +50,6 @@ export default {
 
 <style scoped>
   .site_root {
-    background-color: yellow;
+    background-color: rgb(142, 209, 97);
   }
 </style>
