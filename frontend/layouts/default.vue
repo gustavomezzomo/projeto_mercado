@@ -50,6 +50,6 @@ export default {
 
 <style scoped>
   .site_root {
-    background-color: rgb(142, 209, 97);
+    background-color: rgb(242, 245, 96);
   }
 </style>
