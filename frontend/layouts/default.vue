@@ -32,7 +32,7 @@ export default {
   },
   data: () => ({
     layout: {
-      drawer: null
+      drawer: false
     }
   }),
   computed: {
