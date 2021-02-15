@@ -21,5 +21,8 @@ export default {
   },
   image () {
     return get('/api/image')
+  },
+  list_products_by_setor (setor) {
+    return get(`/api/setor/${setor}/`)
   }
 }

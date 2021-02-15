@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Index from '~/pages/index.vue'
 import Todos from '~/pages/todos.vue'
 import setores from '~/pages/setores.vue'
-import acougue from '~/pages/acougue.vue'
 import bolos from '~/pages/bolos.vue'
 import padaria from '~/pages/padaria.vue'
 import achocolatados from '~/pages/achocolatados.vue'
@@ -18,6 +17,7 @@ import utilidades from '~/pages/utilidades.vue'
 import hortifruti from '~/pages/hortifruti.vue'
 import enlatados from '~/pages/enlatados.vue'
 import bebidas from '~/pages/bebidas.vue'
+import Setor from '~/pages/Setor.vue'
 
 Vue.use(Router)
 
@@ -27,7 +27,7 @@ export const routerOptions = {
     {path: '/', component: Index, name: 'index'},
     { path: '/todos', component: Todos, name: 'todos' },
     { path: '/setores', component: setores, name: 'setores' },
-    { path: '/setores/acougue', component: acougue, name: 'acougue' },
+    { path: '/setor/:slug', component: Setor },
     { path: '/setores/bolos', component: bolos, name: 'bolos' },
     { path: '/setores/padaria', component: padaria, name: 'padaria' },
     { path: '/setores/achocolatados', component: achocolatados, name: 'achocolatados' },

@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
-from .models import Post
+from .models import Post, Setor, Product
 from .forms import PostForm
 from django.shortcuts import redirect
 import logging
@@ -60,3 +60,8 @@ def post_delete(request, pk):
 def image(request):
     post = Post.objects.order_by('-published_date').first()
     return JsonResponse(post.to_json_dict())
+
+def setor_detail(request, slug):
+    setor = get_object_or_404(Setor, slug=slug)
+    products = Product.objects.filter(setor=setor)
+    return JsonResponse({'slug':slug, 'setor':setor.to_dict_json(), 'products':[p.to_dict_json() for p in products]})

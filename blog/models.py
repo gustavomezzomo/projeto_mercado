@@ -36,3 +36,30 @@ class image(models.Model):
 
     def __str__(self):
         return self.image
+
+class Setor(models.Model):
+    title = models.CharField(max_length=200)
+    image = models.ImageField(
+        upload_to='images/setor/', default='/media/images/teste.jpeg'
+    )
+    slug = models.SlugField(max_length=200, unique=True, default=None, blank=True, null=True)
+    def to_dict_json(self):
+        return {
+            'title': self.title,
+            'image': self.image.url
+        }
+    def __str__ (self):
+        return self.title
+
+class Product(models.Model):
+    title = models.CharField(max_length=200)
+    setor = models.ForeignKey(
+        Setor, on_delete = models.CASCADE, related_name="setores", default=None, blank=True, null=True
+    )
+    def to_dict_json(self):
+        return {
+            'title': self.title,
+        }
+    def __str__ (self):
+        return self.title
+
