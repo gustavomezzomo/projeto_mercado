@@ -360,3 +360,21 @@ ERROR "GET /api/image HTTP/1.0" 500 145
 ERROR "GET /api/image HTTP/1.0" 500 145
 INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
 INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/migrations/0001_initial.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/migrations/0001_initial.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/migrations/0001_initial.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/migrations/0001_initial.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/migrations/0001_initial.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/migrations/0001_initial.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.0" 200 8089
+INFO "GET /admin/ HTTP/1.0" 200 8089
+INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.

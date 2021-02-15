@@ -19,4 +19,13 @@ class Migration(migrations.Migration):
             name='image',
             field=models.ImageField(default='/media/images/teste.jpeg', upload_to='images/'),
         ),
+        migrations.RemoveField(
+            model_name='product',
+            name='text',
+        ),
+        migrations.AddField(
+            model_name='product',
+            name='image',
+            field=models.ImageField(default='/media/images/teste.jpeg', upload_to='images/'),
+        ),
     ]

@@ -60,4 +60,13 @@ function post(url, params) {
     return axios.post(url, fd);
 }
 
+function product(url, params) {
+    let fd = new FormData();
+    params = params || {}
+    Object.keys(params).map((k) => {
+        fd.append(k, params[k]);
+    })
+    return axios.product(url, fd);
+}
+
 export default api;

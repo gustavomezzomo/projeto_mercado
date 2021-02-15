@@ -15,3 +15,12 @@ export async function post (url, params) {
   })
   return (await axios.post(url, fd)).data
 }
+
+export async function productt (url, params) {
+  const fd = new FormData()
+  params = params || {}
+  Object.keys(params).map((k) => {
+    fd.append(k, params[k])
+  })
+  return (await axios.product(url, fd)).data
+}

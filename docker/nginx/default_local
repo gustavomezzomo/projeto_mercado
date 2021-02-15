@@ -20,4 +20,7 @@ server {
     location /post {
         proxy_pass http://localhost:8000/admin/blog/post;
     }
+    location /product {
+        proxy_pass http://localhost:8000/admin/blog/product;
+    }
 }
