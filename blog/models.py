@@ -53,6 +53,8 @@ class Setor(models.Model):
 
 class Product(models.Model):
     title = models.CharField(max_length=200)
+    image = models.ImageField(
+        upload_to='images/setor/', default='/media/images/teste.jpeg')
     setor = models.ForeignKey(
         Setor, on_delete = models.CASCADE, related_name="setores", default=None, blank=True, null=True
     )

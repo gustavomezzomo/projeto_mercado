@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from .models import Post, Setor, Product
-from .forms import PostForm
+from .forms import PostForm, ProductForm
 from django.shortcuts import redirect
 import logging
 import json
@@ -65,3 +65,26 @@ def setor_detail(request, slug):
     setor = get_object_or_404(Setor, slug=slug)
     products = Product.objects.filter(setor=setor)
     return JsonResponse({'slug':slug, 'setor':setor.to_dict_json(), 'products':[p.to_dict_json() for p in products]})
+
+def product_detail(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    return render(request, 'blog/product_detail.html', {'product': product})
+
+def product_edit(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    if request.method == "PRODUCT":
+         form = ProductForm(request.PRODUCT, instance=product)
+    if form.is_valid():
+        product = form.save(commit=False)
+        product.author = request.user
+        product.published_date = timezone.now()
+        product.save()
+        return redirect('product_detail', pk=product.pk)
+    else:
+         form = ProductForm(instance=product)
+    return render(request, 'blog/product_edit.html', {'form': form, 'pk': pk})
+
+def product_delete(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    product.delete()
+    return redirect('product_list')

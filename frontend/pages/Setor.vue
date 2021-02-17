@@ -7,7 +7,14 @@
       </v-layout>
       <v-divider class="centraliza" />
       <div v-for="item in products" v-bind="products" :key="item.title">
-        <h1>{{item.title}}</h1>
+        <h1 class="red--text">{{item.title}}</h1>
+        <v-layout>
+          <v-img
+            max-height="100%"
+            max-width="500"
+            :src="product.image"
+          />
+        </v-layout>
       </div>
     </div>
   </div>
@@ -21,20 +28,22 @@ export default {
   data () {
     return {products: [{title: 'example'}],
       setor: {title: 'padrao'},
-      pending: true
+      pending: true,
+      image
+      }
     }
-  },
-  mounted () {
+  }
+  mounted () ;{
     this.pending = true
     api.list_products_by_setor(this.$route.params.slug)
       .then(result => {
         this.products = result.products
         this.setor = result.setor
         this.pending = false
-      })
-      .catch(console.error)
-  }
-}
+      }),
+    api.image().then (result => {
+        this.product = result
+  },
 </script>
 
 <style>

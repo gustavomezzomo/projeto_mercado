@@ -1274,3 +1274,19 @@ WARNING "GET /static/admin/css/responsive.css HTTP/1.0" 404 179
 WARNING "GET /static/admin/css/responsive.css HTTP/1.0" 404 179
 INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
 INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/blog/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
+INFO /home/gustavomezzomo/projeto_mercado/projeto_mercado/settings.py changed, reloading.
