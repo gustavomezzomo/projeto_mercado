@@ -61,6 +61,7 @@ class Product(models.Model):
     def to_dict_json(self):
         return {
             'title': self.title,
+            'image': self.image.url
         }
     def __str__ (self):
         return self.title
