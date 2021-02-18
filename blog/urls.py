@@ -13,6 +13,7 @@ urlpatterns = [
     path('post/<int:pk>/delete/', views.post_delete, name='post_delete'),
     path('api/image', views.image),
     path('api/setor/<str:slug>/', views.setor_detail, name='setor_detail'),
+    path('api/setor/', views.list_setor, name='list_setor')
 ]
 
 if settings.DEBUG:

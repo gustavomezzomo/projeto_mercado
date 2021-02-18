@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer class="orange accent-2" :width="320" dark v-model="state.drawer" app>
+  <v-navigation-drawer class="orange accent-2" :width="320" dark v-model="state.drawer" disable-resize-watcher app>
     <v-list dense>
       <v-list-item class="justify-space-around" @click.stop="state.left = !state.left">
         <v-flex xs4>
@@ -8,7 +8,7 @@
               <v-icon>mdi-home</v-icon>
             </v-list-item-action>
           </v-btn>
-          <v-btn color="rgb(255,0,0)" icon-color="white" href="/setores" target="blank">
+          <v-btn color="rgb(255,0,0)" icon-color="white" href="/setor/" target="blank">
             <v-list-item-action>
               <v-icon>mdi-shopping</v-icon>
             </v-list-item-action>

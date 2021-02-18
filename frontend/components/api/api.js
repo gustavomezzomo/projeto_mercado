@@ -24,5 +24,8 @@ export default {
   },
   list_products_by_setor (setor) {
     return get(`/api/setor/${setor}/`)
+  },
+  list_setor () {
+    return get(`/api/setor`)
   }
 }

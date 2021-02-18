@@ -12,7 +12,7 @@ export const routerOptions = {
   routes: [
     {path: '/', component: Index, name: 'index'},
     { path: '/todos', component: Todos, name: 'todos' },
-    { path: '/setores', component: setores, name: 'setores' },
+    { path: '/setor/', component: setores, name: 'setores' },
     { path: '/setor/:slug', component: Setor }
   ]
 }

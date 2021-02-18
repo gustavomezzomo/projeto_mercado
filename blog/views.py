@@ -66,6 +66,10 @@ def setor_detail(request, slug):
     products = Product.objects.filter(setor=setor)
     return JsonResponse({'slug':slug, 'setor':setor.to_dict_json(), 'products':[p.to_dict_json() for p in products]})
 
+def list_setor(request):
+    setor = Setor.objects.order_by('id').all()
+    return JsonResponse({'setor':[s.to_dict_json() for s in setor]})
+
 def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
     return render(request, 'blog/product_detail.html', {'product': product})

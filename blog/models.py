@@ -46,7 +46,8 @@ class Setor(models.Model):
     def to_dict_json(self):
         return {
             'title': self.title,
-            'image': self.image.url
+            'image': self.image.url,
+            'slug' : self.slug
         }
     def __str__ (self):
         return self.title

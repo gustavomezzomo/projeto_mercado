@@ -6,18 +6,22 @@
         <h1>{{setor.title}}</h1>
       </v-layout>
       <v-divider class="centraliza" />
-      <div v-for="item in products" v-bind="products" :key="item.title">
-        <v-layout justify-center>
-          <h2 class="red--text">{{item.title}}</h2>
-        </v-layout>
-        <v-layout justify-center>
-          <v-img
-            max-height="50%"
-            max-width="300"
-            :src="item.image"
-          />
-        </v-layout>
-      </div>
+      <v-layout row wrap>
+        <v-flex xs12 sm6 md4 class="pa-3" v-for="item in products" v-bind="products" :key="item.title">
+          <v-layout justify-center>
+            <div class="text-center">
+              <h2 class="red--text">{{item.title}}</h2>
+            </div>
+          </v-layout>
+          <v-layout justify-center>
+            <v-img
+              max-height="50%"
+              max-width="300"
+              :src="item.image"
+            />
+          </v-layout>
+        </v-flex>
+      </v-layout>
     </div>
   </div>
 </template>
@@ -49,5 +53,8 @@ export default {
 <style>
   .centraliza {
     padding: 8px;
+  }
+  .text-center {
+    text-align: center;
   }
 </style>
